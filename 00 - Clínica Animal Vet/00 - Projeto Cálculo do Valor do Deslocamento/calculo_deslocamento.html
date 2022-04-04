@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+
+<html lang="pt-br">
+    <head>
+        <meta charset="UTF-8">
+        <title>Clínica Animal Vet</title>
+        <link rel = "stylesheet" href = "01 - Arquivos Auxiliares/01 - CSS/reset.css">
+        <link rel = "stylesheet" href = "01 - Arquivos Auxiliares/01 - CSS/style.css">
+    </head>
+
+    <body>
+        <header>       
+            <img class = "logo" src = "00 - Imagens/logo_clinica.jpeg">
+        </header>
+
+        <div class="mapa">
+            <h1>Utilize o mapa para calcular a distância até o local</h1>
+            <iframe src= "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3750.6653675454777!2d-43.9846521852559!3d-19.93850148659897!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0xa6979238ad83a9%3A0x2568ac4ddbce0da!2sAnimal%20Vet%20Cl%C3%ADnica%20Veterin%C3%A1ria%2024%20horas!5e0!3m2!1spt-PT!2sbr!4v1649101507888!5m2!1spt-PT!2sbr"
+            width = "100%" height= "300" style = "border: 0;" allowfullscreen = "" loading  = "lazy"></iframe>"
+        </div>
+        
+
+        <h2 class="titulo">Cálculo do valor de deslocamento</h2>
+        <h3 class="explicacoes">Preencha os campos abaixo para a realização do cálculo do deslocamento.</h3>
+
+        <form>
+            <label for = "distancia"> Informe a distância em Km até o destino.</label>
+            <input type ="number" id="distancia" class="input_padrao">
+            <label for = "custoCombustivel"> Informe o preco do combustivel.</label>
+            <input type="number" id="custoCombustivel" class="input_padrao">
+            <label for = "custoHora"> Informa o valor do custo da hora.</label>
+            <input type="number" id="custoHora" class = "input_padrao"> 
+            <label for = "depreciacao"> Informe a depreciacao do veículo, em uma escala de 0 a 10, onde 1 representa o custo máximo e 0 nenhum custo.</label>
+            <input type="number" id="depreciacao" class="input_padrao">
+            <input onclick = "calculaCustoTotal()" type="submit" value="Enviar respostas" class="enviar">
+        </form>
+        <script src="01 - Arquivos Auxiliares/00 - JavaScript/main.js"></script>
+    </body>
+
+</html>
+
+
+
