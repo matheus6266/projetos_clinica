@@ -34,7 +34,7 @@ function calculaDepreciacao(distanciaPercorrida, depreciacao){
 
 // condicao para evitar a divisao por 0
     if(depreciacao == 0){
-        return custoDepreciacaoTotal
+        return custoDepreciacaoTotal = 0
     } else {
 
         var valorDepreciacao = 5;
